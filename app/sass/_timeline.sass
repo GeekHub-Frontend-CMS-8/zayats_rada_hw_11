@@ -1,0 +1,334 @@
+.history-timeline
+  display: flex
+  flex-direction: column
+  margin-top: 82px
+
+.timeline
+  list-style: none
+
+  position: relative
+  display: flex
+  flex-direction: row
+  justify-content: center
+  flex-wrap: wrap
+  &:before
+    top: 0
+    bottom: 0
+    position: absolute
+    content: " "
+    width: 2px
+    background: #3e3d3d
+    left: 50%
+    margin-left: -1.5px
+  > li
+    margin-bottom: 20px
+    position: relative
+    width: 50%
+    float: left
+    clear: left
+
+    &:before
+      content: " "
+      display: table
+    &:after
+      content: " "
+      display: table
+      clear: both
+    &:before
+      content: " "
+      display: table
+    &:after
+      content: " "
+      display: table
+      clear: both
+    >
+    .timeline-panel
+      max-width: 570px
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      float: left
+      border: 1px solid #3e3d3d
+      background: #ededed
+      position: relative
+      margin: 30px
+      &:before
+        position: absolute
+        top: 26px
+        right: -15px
+        display: inline-block
+        border-left: 15px solid #3e3d3d
+        border-right: 0 solid #3e3d3d
+        border-bottom: 15px solid transparent
+        content: " "
+      &:after
+        position: absolute
+        top: 27px
+        right: -14px
+        display: inline-block
+        border-left: 14px solid #ededed
+        border-right: 1px solid #ededed
+        border-bottom: 14px solid transparent
+        content: " "
+
+    &.timeline-inverted > .timeline-panel
+      float: right
+      margin-top: 60px
+      &:before
+        border-left-width: 0
+        border-right-width: 15px
+        left: -15px
+        right: auto
+      &:after
+        border-left-width: 0
+        border-right-width: 14px
+        left: -14px
+        right: auto
+  .date
+    position: absolute
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+  .date-two
+    position: absolute
+    display: flex
+    flex-direction: row
+    justify-content: center
+    top: 80%
+
+  .date-three
+    position: absolute
+    display: flex
+    flex-direction: row
+    justify-content: center
+    top: 95%
+
+  .dot
+    height: 17px
+    width: 17px
+    border-radius: 50px
+    background: #3e3d3d
+    position: absolute
+    top: -4px
+    &:after
+      content: ''
+      display: block
+      height: 17px
+      width: 17px
+      border-radius: 50px
+      background: #3e3d3d
+      margin-top: 30px
+
+  .dot-two
+    height: 17px
+    width: 17px
+    border-radius: 50px
+    background: #3e3d3d
+    position: absolute
+    top: 49%
+    &:after
+      content: ''
+      display: block
+      height: 17px
+      width: 17px
+      border-radius: 50px
+      background: #3e3d3d
+      margin-top: 30px
+
+  .dot-three
+    height: 17px
+    width: 17px
+    border-radius: 50px
+    background: #3e3d3d
+    position: absolute
+    top: 108%
+    &:after
+      content: ''
+      display: block
+      height: 17px
+      width: 17px
+      border-radius: 50px
+      background: #3e3d3d
+      margin-top: 80px
+
+
+.timeline-date
+  width: 73px
+  height: 73px
+  position: absolute
+  border: 2px solid #3e3d3d
+  border-radius: 73px
+
+  top: -75px
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  font-family: $item-font
+  font-size: 13px
+  line-height: 18px
+  letter-spacing: 1.47px
+  background-color: #ededed
+  &:hover
+    background-color: #3e3d3d
+    color: white
+
+.timeline-date-second
+  width: 73px
+  height: 73px
+  position: absolute
+  border: 2px solid #3e3d3d
+  border-radius: 73px
+
+  top: 100px
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  font-family: $item-font
+  font-size: 13px
+  line-height: 18px
+  letter-spacing: 1.47px
+  background-color: #ededed
+  z-index: 200
+  &:hover
+    background-color: #3e3d3d
+    color: white
+
+.timeline-date-third
+  width: 73px
+  height: 73px
+  position: absolute
+  border-radius: 73px
+  top: 10px
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  font-family: $item-font
+  font-size: 13px
+  line-height: 18px
+  letter-spacing: 1.47px
+  background-color: #3e3d3d
+  z-index: 200
+  &:hover
+    background-color: #3e3d3d
+    color: white
+
+.timeline-badge
+  right: 100%
+
+.timeline-title
+  margin-top: 0
+  color: inherit
+
+.timeline-heading
+  h4
+    font-weight: 400
+    padding: 0 15px
+    color: #3e3d3d
+    font-family: $item-font
+    font-size: 13px
+    line-height: 18px
+    text-transform: uppercase
+    letter-spacing: 1.47px
+  span
+    color: #3e3d3d
+    font-family: $item-font
+    font-size: 11px
+    font-weight: 400
+    line-height: 18px
+    padding: 9px 15px
+
+.timeline-body > p, ul
+  padding: 10px 15px
+  margin-bottom: 0
+  color: #3e3d3d
+  font-weight: 400
+  line-height: 20.31px
+  letter-spacing: 1.4px
+
+
+.timeline > li
+  &.timeline-inverted
+    float: right
+    clear: right
+  &:nth-child(2)
+    margin-top: 60px
+  &.timeline-inverted > .timeline-badge
+    left: -12px
+
+.no-float
+  float: none !important
+
+
+@media (max-width: 800px)
+  .timeline
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    align-items: center
+
+  .dot, .dot-two, .dot-three
+    display: none
+
+  .date
+    position: absolute
+    display: flex
+    flex-direction: row
+    justify-content: center
+    top: 0
+
+  .timeline-date-second
+    width: 73px
+    height: 73px
+    position: absolute
+    border: 2px solid #3e3d3d
+    border-radius: 73px
+    top: 200px
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    font-family: $item-font
+    font-size: 13px
+    line-height: 18px
+    letter-spacing: 1.47px
+    background-color: #ededed
+    z-index: 200
+
+  .timeline-panel
+    max-width: 570px
+    display: flex
+    flex-direction: column
+    border: 1px solid #3e3d3d
+    background: #ededed
+    position: relative
+    margin: 30px
+    &:before
+      display: none
+
+  .timeline
+    list-style: none
+    padding: 29px 0
+    position: relative
+    &:before
+      top: 0
+      bottom: 0
+      position: absolute
+      content: " "
+      width: 2px
+      background: #3e3d3d
+      left: 50%
+      margin-left: -1.5px
+    > li
+      display: flex
+      justify-content: center
+      margin-bottom: 20px
+      position: relative
+      width: 100%
+      float: left
+      clear: left
+
+

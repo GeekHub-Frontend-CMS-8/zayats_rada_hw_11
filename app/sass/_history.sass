@@ -1,0 +1,49 @@
+.history
+  width: 100%
+  height: 100%
+  display: flex
+  padding-top: 57px
+  padding-bottom: 100px
+  flex-direction: column
+  flex-wrap: wrap
+  background-color: #ededed
+
+.history-content
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  h2
+    color: #3e3d3d
+    font-family: $section-font
+    font-size: 20px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 0.44px
+    margin: 0 auto
+  img
+    width: 186px
+    height: 100%
+    margin: 0 auto
+    margin-top: 27px
+  p
+    margin: 0 auto
+    color: #3e3d3d
+    font-size: 14px
+    font-weight: 400
+    line-height: 25px
+    letter-spacing: 1.4px
+    text-align: center
+    margin-top: 37px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
+@media screen and (max-width: 768px)
+  .history-content
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    p
+      display: flex
+      flex-direction: column

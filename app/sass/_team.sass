@@ -1,0 +1,140 @@
+.team
+  background: url("../img/team/team-bg.jpg") no-repeat center
+  background-size: cover
+  width: 100%
+  height: 100%
+  padding-top: 67px
+  padding-bottom: 71px
+  display: flex
+
+.team-content
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  h2
+    font-family: $section-font
+    font-size: 20px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 0.44px
+  img
+    margin-top: 27px
+  p
+    margin-top: 37px
+    font-weight: 400
+    line-height: 25px
+    letter-spacing: 1.4px
+
+.team-items
+  max-width: 872px
+  margin: 0 auto
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-top: 56px
+
+.box-first
+  position: relative
+  overflow: hidden
+  height: 338px
+  width: 271px
+  background: url('../img/team/Image_1.png') center left no-repeat
+  background-size: cover
+  cursor: pointer
+
+.box-second
+  position: relative
+  overflow: hidden
+  height: 338px
+  width: 271px
+  background: url('../img/team/Image2.png') center left no-repeat
+  background-size: cover
+  cursor: pointer
+
+.box-third
+  position: relative
+  overflow: hidden
+  height: 338px
+  width: 271px
+  background: url('../img/team/Image3.png') center left no-repeat
+  background-size: cover
+  cursor: pointer
+
+.hover-effect
+  position: absolute
+  top: 8px
+  left: 8px
+  width: 256px
+  height: 321px
+  background: rgba(246, 246, 246, .82)
+  transition: all 0.3s ease-in-out
+  opacity: 0
+
+.box-first:hover
+  .hover-effect
+    opacity: 1
+  .hover-text
+    right: 0
+
+.box-second:hover
+  .hover-effect
+    opacity: 1
+  .hover-text
+    right: 0
+
+.box-third:hover
+  .hover-effect
+    opacity: 1
+  .hover-text
+    right: 0
+
+.hover-text
+  left: 100%
+  bottom: 0
+  display: block
+  max-width: 100%
+  padding-left: 19px
+  color: #e2e2e2
+  text-decoration: none
+  text-align: left
+  letter-spacing: 5px
+  transition: all 0.5s ease-in-out
+  h1
+    color: #3e3d3d
+    font-family: $item-font
+    font-size: 13px
+    font-weight: 400
+    line-height: 18px
+    letter-spacing: 1.47px
+    padding-top: 210px
+  p
+    text-align: left
+    height: 12px
+    color: #3e3d3d
+    font-size: 12px
+    font-style: italic
+
+.team-social
+  padding-left: 21px
+  padding-top: 18px
+  a
+    color: #3e3d3d
+    border-right: 1px solid
+    padding-right: 5px
+
+@media screen and (max-width: 820px)
+  .team-items
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .box-first,.box-second
+    margin-bottom: 20px
+
+
+
+
+

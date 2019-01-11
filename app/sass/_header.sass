@@ -1,0 +1,106 @@
+header
+  background-color: white
+  margin: 0 auto
+  padding: 0.8em 0
+  .header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    margin: 0 auto
+
+    .top-logo
+      display: flex
+      align-items: center
+      img
+        margin: 0 0.66em
+      span
+        color: #757575
+        font-family: $item-font
+        font-size: 1em
+        font-weight: 400
+        text-transform: uppercase
+
+#burg a
+  display: block
+
+#burg
+  width: 5%
+  background-color: white
+  padding: 7.5px 0 7.5px 2%
+  span
+    display: flex
+    margin: 8px
+    width: 30px
+    height: 1px
+    background: #2d2d2f
+    z-index: 999
+
+#desktop
+  display: none
+
+.mobile-tab
+  display: flex
+  width: 100%
+  background: white
+  flex-direction: column
+
+.mobile-tab a
+  color: #aaaaaa
+  font-family: $item-font
+  font-size: 12px
+  font-weight: 400
+  text-transform: uppercase
+  text-decoration: none
+
+.mobile-tab li
+  list-style-type: none
+  margin: 5% 5%
+
+.mobile-tab ul
+  padding: 5% 0
+
+@media screen and (min-width: 768px)
+  .header
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    #burg
+      display: none
+
+    .mobile-tab, #burg, #mobile
+      display: none
+
+    .bar
+      background: white
+      display: flex
+      align-items: center
+      max-width: 650px
+      width: 100%
+      justify-content: space-between
+
+    .mobile-tab
+      display: none
+
+    #desktop
+      display: flex
+      a
+        text-decoration: none
+        color: #aaaaaa
+        font-family: $item-font
+        font-size: 12px
+        font-weight: 400
+        text-transform: uppercase
+      ul
+        display: inline-flex
+        list-style: none
+
+      li
+        cursor: pointer
+        padding: 5px 5px
+
+
+
+
+
+

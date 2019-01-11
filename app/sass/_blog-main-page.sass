@@ -1,0 +1,124 @@
+.blog-main-page
+  padding-top: 83px
+
+
+
+.blog-main-page-content
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  h2
+    color: #3e3d3d
+    font-family: $section-font
+    font-size: 20px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 0.44px
+  img
+    margin-top: 27px
+  p
+    color: #3e3d3d
+    font-weight: 400
+    line-height: 25px
+    letter-spacing: 1.4px
+    text-align: center
+    margin-top: 37px
+    margin-bottom: 78px
+
+
+.blog-main-page-gallery
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  img
+    width: 399px
+
+.blog-item
+  display: flex
+  flex-direction: column
+  background-color: #2d2d2f
+  width: 363px
+  padding-left: 38px
+  .date
+    color: #e3e3e3
+    font-size: 12px
+    font-style: italic
+    line-height: 18px
+    margin-top: 49px
+    &:after
+      content: ""
+      padding: 1px
+      width: 151px
+      height: 1px
+      background-color: #454545
+      display: block
+      margin-top: 11px
+  a
+    text-decoration: none
+    color: #e3e3e3
+    font-family: $item-font
+    font-size: 13px
+    font-weight: 400
+    line-height: 18px
+    text-transform: uppercase
+    letter-spacing: 1.47px
+    margin-top: 19px
+  .text
+    width: 320px
+    color: #949494
+    font-weight: 400
+    line-height: 20.31px
+    letter-spacing: 1.4px
+    margin-top: 37px
+    margin-bottom: 73px
+    text-align: justify
+
+.blog-item-second
+  display: flex
+  flex-direction: column
+  background-color: #555557
+  width: 363px
+  padding-left: 38px
+  .date
+    color: #e3e3e3
+    font-size: 12px
+    font-style: italic
+    line-height: 18px
+    margin-top: 49px
+    &:after
+      content: ""
+      padding: 1px
+      width: 151px
+      height: 1px
+      background-color: #454545
+      display: block
+      margin-top: 11px
+  a
+    text-decoration: none
+    color: #e3e3e3
+    font-family: $item-font
+    font-size: 13px
+    font-weight: 400
+    line-height: 18px
+    text-transform: uppercase
+    letter-spacing: 1.47px
+    margin-top: 19px
+  .text
+    width: 320px
+    color: #949494
+    font-weight: 400
+    line-height: 20.31px
+    letter-spacing: 1.4px
+    margin-top: 37px
+    margin-bottom: 73px
+    text-align: justify
+
+@media screen and (max-width: 800px)
+  .blog-main-page-gallery
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
