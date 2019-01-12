@@ -2350,6 +2350,8 @@ header .header .top-logo span {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 45px;
   padding-bottom: 45px;
   margin: 0 auto;
@@ -2371,6 +2373,9 @@ header .header .top-logo span {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 20px;
 }
 
 .blog-content .comment {
@@ -2449,6 +2454,8 @@ header .header .top-logo span {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2485,8 +2492,8 @@ header .header .top-logo span {
 }
 
 .blog-content .comment .comment-text {
-  max-width: 811px;
   width: 100%;
+  height: 100%;
   color: #3e3d3d;
   font-size: 14px;
   font-weight: 400;
@@ -2700,11 +2707,42 @@ header .header .top-logo span {
 }
 
 @media screen and (max-width: 1000px) {
-  .sidebar {
-    display: none;
-  }
   .news-container {
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .news-container .comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .news-container .comment img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin-top: 51px;
+  }
+  header .social {
+    display: none;
   }
 }
 
